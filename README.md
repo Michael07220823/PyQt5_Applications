@@ -1,1 +1,1 @@
-# PyQt_Application
+# PyQt5_Applications
