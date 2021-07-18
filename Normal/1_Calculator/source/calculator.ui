@@ -8,19 +8,13 @@
     <x>0</x>
     <y>0</y>
     <width>421</width>
-    <height>569</height>
+    <height>543</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
     <width>421</width>
-    <height>569</height>
-   </size>
-  </property>
-  <property name="baseSize">
-   <size>
-    <width>414</width>
-    <height>439</height>
+    <height>543</height>
    </size>
   </property>
   <property name="font">
@@ -36,16 +30,25 @@
     <normaloff>source/calculator.png</normaloff>source/calculator.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>421</width>
+     <height>520</height>
+    </size>
+   </property>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>397</width>
+      <width>404</width>
       <height>528</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
      <item>
       <widget class="QLabel" name="expression_label">
        <property name="maximumSize">
@@ -62,6 +65,9 @@
        <property name="text">
         <string/>
        </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
@@ -71,18 +77,32 @@
       <widget class="QLCDNumber" name="lcdNumber">
        <property name="minimumSize">
         <size>
-         <width>0</width>
-         <height>100</height>
+         <width>395</width>
+         <height>75</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>16777215</width>
-         <height>100</height>
+         <width>100</width>
+         <height>75</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>5</number>
+       </property>
        <property name="smallDecimalPoint">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="digitCount">
         <number>20</number>
@@ -417,6 +437,12 @@
        </item>
        <item row="6" column="0" colspan="2">
         <widget class="QPushButton" name="zero">
+         <property name="maximumSize">
+          <size>
+           <width>193</width>
+           <height>47</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <pointsize>20</pointsize>
